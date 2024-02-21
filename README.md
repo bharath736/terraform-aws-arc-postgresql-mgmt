@@ -68,7 +68,7 @@ No modules.
 
 ## Inputs
 
-| Name | Description | Type | Default | Required | Notes |
+| Name | Description | Type | Default | Required | Reference Links |
 |------|-------------|------|---------|:--------:| ------- |
 | <a name="input_pg_roles"></a> [pg\_roles](#input\_pg\_roles) | A map of objects where each key-value pair represents a PostgreSQL role | <pre>map(object({<br>    postgres_role_name = string<br>    login              = string<br>    password           = string<br>  }))</pre> | n/a | yes | <a>https://registry.terraform.io/providers/cyrilgdn/postgresql/latest/docs/resources/postgresql_role</a> |
 | <a name="input_pg_ssm_parameters"></a> [pg\_ssm\_parameters](#input\_pg\_ssm\_parameters) | postgresql SSM parameters | <pre>map(object({<br>    name     = string<br>    type     = string<br>    password = string<br>  }))</pre> | n/a | yes |
